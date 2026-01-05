@@ -1,0 +1,20 @@
+let num: number = 2;
+
+while (num <= 100) {
+  let isPrime: boolean = true;
+  let i: number = 2;
+
+  while (i < num) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+    i++;
+  }
+
+  if (isPrime) {
+    console.log(num);
+  }
+
+  num++;
+}
